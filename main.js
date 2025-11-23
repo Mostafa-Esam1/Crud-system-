@@ -65,6 +65,21 @@ let DeletePhone = () => {
   ShowPhones();
 };
 
-let Update = () => {
-    
-}
+let EditName = () => {
+  let IndexName = +prompt("enter the index ");
+  let NewName = prompt("Enter new name phone");
+  phones[IndexName].name = NewName;
+  ShowPhones();
+};
+let EditPrice = () => {
+  let IndexPrice = +prompt("enter the index ");
+  let NewPrice = +prompt("Enter the new price"); // مرحلهReasige
+  phones[IndexPrice].price = NewPrice;
+  ShowPhones();
+};
+let EditQty = () => {
+  let IndexQty = +prompt("Enter the index");
+  let NewQty = +prompt("Enter new Qty ");
+  phones[IndexQty].qty = NewQty;
+  ShowPhones();
+};
